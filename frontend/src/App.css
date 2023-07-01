@@ -1,0 +1,195 @@
+:root {
+  --first-color: #16A3B7;
+  --second-color: rgb(40, 198, 5);
+  --third-color: #DC3445;
+}
+
+/* Svg */
+span svg {
+  margin-bottom: 4px;
+}
+
+/* Form Container */
+.container {
+  max-width: 700px;
+}
+
+/* Buttons */
+.add-btn {
+  width: -webkit-fill-available;
+  background-color: var(--first-color) !important;
+  border-color: var(--first-color) !important;
+}
+
+.card-buttons {
+  margin-top: 3px;
+  flex-direction: column !important;
+}
+
+.card-buttons button {
+  background-color: var(--first-color);
+  border-color: var(--first-color) !important;
+}
+
+.delete-buttons .btn {
+  border: none;
+  background-color: var(--third-color);
+}
+
+.list-buttons .btn {
+  margin-top: 2px;
+  width: -webkit-fill-available;
+  background-color: var(--first-color);
+  border: none;
+}
+
+/* Inputs */
+.input-group-text {
+  background-color: var(--first-color);
+}
+
+.input-group-text svg {
+  color: white;
+}
+
+.form-control:focus {
+  border-color: var(--first-color);
+  box-shadow: none !important;
+}
+
+/* Check */
+.form-check-input:focus {
+  border-color: var(--second-color);
+  box-shadow: none !important;
+  color: var(--second-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--second-color);
+  border-color: var(--second-color);
+}
+
+.form-check-input {
+  width: 17px;
+  height: 17px;
+  border-color: rgb(65, 63, 63);
+}
+
+.form-check-input:hover {
+  cursor: pointer;
+}
+
+/* Items */
+.deleteItem {
+  color: #DC3346;
+}
+
+.updateItem {
+  color: #FFC100;
+}
+
+.deleteItem:hover,
+.updateItem:hover {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border-top-width: 1px !important;
+}
+
+.content {
+  max-width: 500px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.content::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: transparentize(var(--first-color), 0.7);
+}
+
+.content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--first-color);
+}
+
+/* Checkbox */
+.checked .content {
+  text-decoration: line-through;
+  color: var(--third-color);
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    max-width: 200px;
+  }
+}
+
+.todo-list-body {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.todo-list-body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.todo-list-body::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.todo-list-body::-webkit-scrollbar-track {
+  background-color: transparentize(var(--first-color), 0.7);
+}
+
+.todo-list-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--first-color);
+}
+
+.todo-list-body {
+  position: relative;
+  /* Scroll düğmesini liste elemanlarının üzerinde tutmak için */
+}
+
+.scroll-button {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--first-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.scroll-button:hover {
+  opacity: 1;
+}
+
+.list-group li:last-child {
+  margin-bottom: 5px !important;
+  /* Son elemanın altında 5px boşluk bırak */
+}
+
+.list-container {
+  position: relative;
+  margin-bottom: 44px;
+  /* Scroll düğmesinin yerleşimine göre list containerın alt boşluğunu ayarla */
+}
